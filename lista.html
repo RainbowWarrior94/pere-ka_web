@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="wight=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@500&family=Kaushan+Script&display=swap" rel="stylesheet">
+    <title>Strona główna</title>
+    <link rel="styleSheet" href=style.css>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          
+          <div class="header__logo">
+            <a class="logo" href="index.html">Perełka</a>
+          </div>
+
+          <nav class="nav">
+            <a class="nav__link nav__link--active" href="lista.html">Lista produktów</a>
+            <a class="nav__link" id="showModalBtn">Logowanie</a>
+          </nav>
+
+        </div>
+      </div>
+    </header>  
+
+    <div class="product">
+      <div class="container">
+        <div class="product__inner">
+          <h1 class="product__inner_title">Lista twoich perełek</h1>
+    
+          <div class="border">
+            <div class="wrap">
+              <div class="product__wrap">
+                <a href=""><img src="images/photo_1.jpg"></a>
+              </div>
+              <div class="loop-action">
+                <a href="edycja.html" class="add-to-cart">Edytuj</a>
+                <a href="usuwanie.html" class="add-to-cart">Usuń</a>
+              </div>
+            </div>
+            <div class="product__info">
+              <h3 class="product__title">Kostium klauna</h3>
+              <h3 class="product__size">Rozmiar L</h3>
+              <span class="product__price">100 PLN</span>
+            </div>           
+          </div>
+
+          <div class="border">
+            <div class="wrap">
+              <div class="product__wrap">
+                <a href=""><img src="images/photo_2.jpg"></a>
+              </div>
+              <div class="loop-action">
+                <a href="edycja.html" class="add-to-cart">Edytuj</a>
+                <a href="usuwanie.html" class="add-to-cart">Usuń</a>
+              </div>
+            </div>
+            <div class="product__info">
+              <h3 class="product__title">Sukienka damska</h3>
+              <h3 class="product__size">Rozmiar M</h3>
+              <span class="product__price">100 PLN</span>
+            </div>
+          </div> 
+
+          <div class="border">
+            <div class="wrap">
+              <div class="product__wrap">
+                <a href=""><img src="images/photo_3.jpg"></a>
+              </div>
+              <div class="loop-action">
+                <a href="edycja.html" class="add-to-cart">Edytuj</a>
+                <a href="usuwanie.html" class="add-to-cart">Usuń</a>
+              </div>
+            </div>
+            <div class="product__info">
+              <h3 class="product__title">Spodnie damskie</h3>
+              <h3 class="product__size">Rozmiar L</h3>
+              <span class="product__price">50 PLN</span>
+            </div>
+          </div> 
+
+          <div class="border">
+            <div class="wrap">
+              <div class="product__wrap">
+                <a href=""><img src="images/photo_4.jpg"></a>
+              </div>
+              <div class="loop-action">
+                <a href="edycja.html" class="add-to-cart">Edytuj</a>
+                <a href="usuwanie.html" class="add-to-cart">Usuń</a>
+              </div>
+            </div>
+            <div class="product__info">
+              <h3 class="product__title">Buty Dr. Martens</h3>
+              <h3 class="product__size">Rozmiar 39</h3>
+              <span class="product__price">250 PLN</span>
+            </div>
+          </div> 
+
+          <div class="border">
+            <div class="wrap">
+              <div class="product__wrap">
+                <a href=""><img src="images/photo_5.jpg"></a>
+              </div>
+              <div class="loop-action">
+                <a href="edycja.html" class="add-to-cart">Edytuj</a>
+                <a href="usuwanie.html" class="add-to-cart">Usuń</a>
+              </div>
+            </div>
+            <div class="product__info">
+              <h3 class="product__title">Spodnie damskie</h3>
+              <h3 class="product__size">Rozmiar M</h3>
+              <span class="product__price">50 PLN</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div id="modal__login" class="modal__login">
+      <div class="modal__content">
+        <span class="close" id="closeModalBtn">×</span>
+        <a class="header__logo">Perełka</a>
+          <form id="login__form">
+              <label for="username" ></label>
+              <input type="text" id="username" name="username" placeholder="Imię użytkownika" required>
+              <br>
+              <label for="password" ></label>
+              <input type="password" id="password" name="password" placeholder="Hasło" required>
+              <br>
+              <button class="btn" type="button" >Zaloguj się</button>
+          </form>
+      </div>
+    </div>
+  
+    <script src="login.js"></script>
+
+    <footer class="footer"> 
+      <h5>© 2023 Perełka by Anastasiya Kruhlik</h5>
+    </footer> 
+  </body>
+</html>  
